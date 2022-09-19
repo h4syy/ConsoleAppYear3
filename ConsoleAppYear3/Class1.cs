@@ -8,7 +8,8 @@ namespace ConsoleAppYear3
 {
     internal class Class1
     {
-        public void Addition() {
+        public void Addition()
+        {
             Console.WriteLine("Enter Number 1: ");
             int number1 = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Enter Number 2: ");
@@ -43,5 +44,14 @@ namespace ConsoleAppYear3
             var quotient = number1 + number2;
             Console.WriteLine("The quotient of the two numbers is :" + quotient);
         }
+        public void StringInterpolation()
+        {
+            Console.WriteLine("Enter First Name:  ");
+            string? word1 = Console.ReadLine();
+            Console.WriteLine("Enter Last Name: ");
+            string? word2 = Console.ReadLine();
+            Console.WriteLine($"My name is {word1} {word2}.");
+        }
+
     }
 }
